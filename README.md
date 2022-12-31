@@ -1,5 +1,9 @@
 # Grocery Web Scraper
 
+##How to Run:
+1. Install Python3
+2. Pip install beautifulsoup
+
 Scrapes https://newindiansupermarket.com for:
 * Item Name
 * Item Brand
