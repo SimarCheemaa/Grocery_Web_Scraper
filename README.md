@@ -6,8 +6,8 @@ Scrapes https://newindiansupermarket.com for:
 * Item Price
 * Item Quantity
 
-Image 1
+![image1](ReadMe_Images/image1.jpeg)
 
 Stores the fields into a CSV file.
 
-Image 2
+![image2](ReadMe_Images/image2.jpeg)
