@@ -3,7 +3,7 @@
 ## How to Run:
 1. Install Python3
 2. Pip install beautifulsoup
----
+## Scraper:
 Scrapes https://newindiansupermarket.com for:
 * Item Name
 * Item Brand
