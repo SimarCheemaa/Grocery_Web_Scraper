@@ -49,7 +49,6 @@ def create_csv(file_title: str, lists: list, value: str, item_type: str = None):
 i = 1
 file_type = 'w'
 while i < 33:
-    print(i)
     # URL to go to
     URL = f"https://newindiansupermarket.com/collections/spices-herbs?page={i}"
     page = requests.get(URL)
