@@ -30,7 +30,20 @@ def create_csv(file_title: str, lists: list, value: str, item_type: str = None):
                 weight = lst.find(
                     'div', class_="product-block__weight-value").text
             except:
-                weight = "na lb"
+                link = lst.find('a', class_='quick-buy btn')
+                if link:
+                    link = link.get('href')
+                    link = "https://newindiansupermarket.com" + link
+                    page = requests.get(link)
+                    soup = BeautifulSoup(page.content, 'html.parser')
+                    w = soup.find('option').get('value')
+                    weight = ""
+                    for num in w:
+                        if num.isnumeric():
+                            weight += num
+                    weight += " lb"
+                else:
+                    weight = "na lb"
 
             title = title.strip().title()
             price = price.strip()[1:]
